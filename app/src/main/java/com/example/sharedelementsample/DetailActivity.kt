@@ -1,8 +1,8 @@
 package com.example.sharedelementsample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.example.sharedelementsample.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
@@ -13,6 +13,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding  = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
